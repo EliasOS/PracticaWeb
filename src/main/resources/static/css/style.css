@@ -1,0 +1,24 @@
+body {
+    background-color: cornflowerblue;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: navy;
+}
+
+label {
+    margin: 0px 5px 8px 8px;
+}
+
+input, option {
+    background-color: rgb(66, 165, 245);
+}
+
+#comentarios {
+    margin-left: 5px;
+}
+
+#form1 {
+    margin-bottom: 12px;
+}

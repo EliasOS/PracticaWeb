@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.1.5'
+    id 'io.spring.dependency-management' version '1.1.3'
+}
+
+group = 'org.ecollfelipe'
+version = '0.0.0.1_PreSuperInfraBeta_Alpha'
+
+java {
+    sourceCompatibility = '17'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // vienen de fábrica (Sprintboot)
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // para anotaciones con GetMapping o PostMapping
+    implementation 'org.springframework.boot:spring-boot-starter-web:3.1.2'
+    // para visualizar html
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:3.1.2'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    // implementation 'org.thymeleaf:thymeleaf:3.1.1.RELEASE'
+
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
